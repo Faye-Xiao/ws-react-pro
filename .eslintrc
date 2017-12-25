@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/all"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "no-console": 0,
+        "react/jsx-indent-props": [
+            2,
+            4
+        ],
+        "react/jsx-indent": [
+            2,
+            2
+        ],
+        "react/forbid-prop-types": 0,
+        "react/no-set-state": 0
+    },
+    "globals": {
+        "Promise": true,
+        "global": true
+    }
+}
